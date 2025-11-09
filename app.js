@@ -123,7 +123,7 @@ class HabitTracker {
 
   completeHabit(habitIndex) {
     // In displayed habit, index is +1, therefore to target the correct index, index must be -1
-    const habit = this.habits[habitIndex - 1] ?? null;
+    const habit = this.habits.find((_, i) => i === habitIndex - 1) ?? null;
     if (!habit) {
       console.log('Index is not valid');
       return;
