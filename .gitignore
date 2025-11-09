@@ -5,6 +5,7 @@ node_modules/
 habits-data.json
 
 # Student submission files
+app.js
 
 # Logs
 *.log
